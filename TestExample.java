@@ -46,7 +46,10 @@ public class TestExample {
 				cj=0;
 				for (int colVal = 0; colVal < sheet.getColumns(); colVal++,cj++) {
 					tabArray[ci][cj]=sheet.getCell(colVal,rowVal).getContents();
-					/* System.out.println("Tab Array values: "+tabArray[ci][cj]);*/
+					/* System.out.println("Tab Array values: "+tabArray[ci][cj]); 
+					JavascriptExecutor js = (JavascriptExecutor)driver;
+js.executeScript("arguments[0].click();", element);
+					*/
 				}		 
 			}
 		}
